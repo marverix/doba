@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "doba"
+version = "0.1.0"
+description = "DOcker containers BAckup utility"
+authors = [
+    "Marek Sierociński <mareksierocinski@gmail.com>"
+]
+license = "Apache-2.0"
+
+readme = "README.md"
+
+repository = "https://github.com/marverix/doba"
+homepage = "https://github.com/marverix/doba"
+
+keywords = ["docker", "backup", "docker-containers", "cli", "utility"]
+
+classifiers = [
+    "Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+typer = "^0.4.0"
+dropbox = "^11.28.0"
+httpunixsocketconnection = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.1"
+pycodestyle = "^2.7.0"
+coverage = "^5.5"
+tox = "^3.23.0"
+tox-poetry = "^0.3.0"
+codecov = "^2.1.11"
+tox-gh-actions = "^2.5.0"
+pyinstaller = "^4.10"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
